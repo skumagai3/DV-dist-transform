@@ -12,7 +12,7 @@ Model trained with [0,1] scaling of density and distance transform:
 
 DV-2D.ipynb notebook loads in 256 images (density slices) from Illustris TNG and the corresponding distance transform fields. It runs training with a model (architecture in build_model at the end of nets.py) with mean squared error loss and a linear activation function. It then runs predictions on the data it trained on and produces a comparison figure.
 
-Future work: 
+Ongoing and Future work: 
 - Determining what the best type of preprocessing is. At the moment, the density and distance transform fields are minmaxed to a range of [0,1], but taking the log of the density before that step may or may not help.
 - Is MSE the best loss function to use? Easy alternatives built into Keras include MAE, MAPE, etc. (see https://keras.io/api/losses/regression_losses/)
 - Custom loss function(s) for bespoke networks? By bespoke I mean purpose-built, like a model that would reward voxels at the center of voids more than those at the edges or vice versa, etc. (see https://keras.io/api/losses/)
