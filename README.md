@@ -20,7 +20,7 @@ Ongoing and Future work:
 - What is the receptive field at the bottleneck? Or in other words (I think), how much of the input image or volume corresponds to one pixel at the bottleneck (lowest layer)? [reference](https://www.baeldung.com/cs/cnn-receptive-field-size)
 - Why isn't this translating into 3D? 3D U-Net for this same task is not converging in training and the predictions are all one value except for one row at the bottom of the volume. Is this a reconstruction difficulty or some other issue? Have we let the 3D network train long enough? 
 - Should we be seeking to minimize validation loss or just loss? Odd behavior during training:
-![2DTEST-preprocaccloss_vs_epochs](https://user-images.githubusercontent.com/38794996/181814564-b2eea425-f877-4f8b-971a-3c391cf4f716.jpg)
+![2DTEST-preprocaccloss_vs_epochs](https://user-images.githubusercontent.com/38794996/181814564-b2eea425-f877-4f8b-971a-3c391cf4f716.jpg) Note that the current DeepVoid and 2DTest models all save the model with the best validation (test set specified in the model.fit call) loss.
 
 ## CONTACT ME
 If you have problems running the notebook, or other questions about training/predicting/the DeepVoid project in general, message me on the DeepVoid collaboration Slack or by email at sk3993@drexel.edu.
