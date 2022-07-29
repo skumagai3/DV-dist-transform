@@ -21,6 +21,7 @@ Ongoing and Future work:
 - Why isn't this translating into 3D? 3D U-Net for this same task is not converging in training and the predictions are all one value except for one row at the bottom of the volume. Is this a reconstruction difficulty or some other issue? Have we let the 3D network train long enough? 
 - Optimizer & learning rate: Adam w/ lr = 1e-3 right now. Hyperparameter search once model is more stabilized in terms of architecture and performance.
 - Should we be seeking to minimize validation loss or just loss? Odd behavior during training:
+
 ![2DTEST-preprocaccloss_vs_epochs](https://user-images.githubusercontent.com/38794996/181814564-b2eea425-f877-4f8b-971a-3c391cf4f716.jpg) 
 
 Note that the current DeepVoid and 2DTest models all save the model with the best validation (test set specified in the model.fit call) loss.
