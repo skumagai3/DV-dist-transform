@@ -22,4 +22,4 @@ Future work:
 ![2DTEST-preprocaccloss_vs_epochs](https://user-images.githubusercontent.com/38794996/181814564-b2eea425-f877-4f8b-971a-3c391cf4f716.jpg)
 
 ## CONTACT ME
-If you have problems running the notebook, or other questions about training/predicting/the DeepVoid project in general, hit me on the DeepVoid collaboration Slack or by email at sk3993@drexel.edu.
+If you have problems running the notebook, or other questions about training/predicting/the DeepVoid project in general, message me on the DeepVoid collaboration Slack or by email at sk3993@drexel.edu.
