@@ -17,6 +17,7 @@ Ongoing and Future work:
 - Is MSE the best loss function to use? Easy alternatives built into Keras include MAE, MAPE, etc. (see [Keras reg losses](https://keras.io/api/losses/regression_losses/))
 - Custom loss function(s) for bespoke networks? By bespoke I mean purpose-built, like a model that would reward voxels at the center of voids more than those at the edges or vice versa, etc. (see [losses](https://keras.io/api/losses/)) 
 - Does dropout help with generalizability? It has been proven to for fully connected networks (but not necessarily for CNNs, see [this article](https://towardsdatascience.com/dropout-on-convolutional-layers-is-weird-5c6ab14f19b2)). Right now there are dropout layers after each convolution or deconvolution block, but these can be easily deactivated.
+- What is the receptive field at the bottleneck? Or in other words (I think), how much of the input image or volume corresponds to one pixel at the bottleneck (lowest layer)? [reference](https://www.baeldung.com/cs/cnn-receptive-field-size)
 - Why isn't this translating into 3D? 3D U-Net for this same task is not converging in training and the predictions are all one value except for one row at the bottom of the volume. Is this a reconstruction difficulty or some other issue? Have we let the 3D network train long enough? 
 - Should we be seeking to minimize validation loss or just loss? Odd behavior during training:
 ![2DTEST-preprocaccloss_vs_epochs](https://user-images.githubusercontent.com/38794996/181814564-b2eea425-f877-4f8b-971a-3c391cf4f716.jpg)
